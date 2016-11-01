@@ -6,11 +6,11 @@ public class java4
 
 	public static void main(String args[])
 	{
-		/*
+/*
 			Scanner ay = new Scanner (System.in);
 			System.out.println("Bir Ay Giriniz:");
 			int ay_Adi = ay.nextInt();
-		*//*
+*/
 		String sayi= JOptionPane.showInputDialog(null,"Merak ettiginiz ay numarasını giriniz :");
 		
 		int aynumarasi = Integer.parseInt(sayi);
@@ -32,9 +32,9 @@ public class java4
 		
 		default:System.out.println("Bir yıl 12 aydan oluşmaktadır.");break;
 		}
-		*/
+
 		
-		
+		/*
 		int sayac = 1;
 		do {
 		 System.out.println("Sayac: " + sayac);
@@ -45,6 +45,8 @@ public class java4
 		    {
 			 System.out.println("Sayac " + sayac);
 			 sayac--;
+
 			} 
+*/
     }
 }
