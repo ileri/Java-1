@@ -124,7 +124,7 @@ e eşittir.
 char a = '3';
 ~~~
 
-** byte , short , int , long , float , double , char , boolean haricindeki TÜM VERİ TİPLERİ "Referans Veri Tipi" dir. **
+**byte , short , int , long , float , double , char , boolean haricindeki TÜM VERİ TİPLERİ "Referans Veri Tipi" dir.**
 
 Örn: String , Array , Classlar ...
 
