@@ -38,3 +38,20 @@ Java'da bir class'ın derlenebilmesi için o class main metoduna sahip olmalıd�
 Java programları çok kısa dahi olsa class içinde yazılmalıdır.
 
 
+### Veri Tipleri
+
+#### Tamsayılar: byte , short , long , int
+
+-> byte: En küçük tamsayı tipidir. -2^(-7) ile (2^(7))-1 arasında değerler alır. Bellekte **8 bit** yer kaplar.
+
+-> short: -2^(-16) ile (2^(16))-1 arasında değerler alır. Bellekte **16 bit** yer kaplar.
+
+-> int: -2^(-32) ile (2^(32))-1 arasında değerler alır. Bellekte **32 bit** yer kaplar.
+
+-> long: -2^(63) ile (2^(63))-1 arasında değerler alır. Bellekte **64 bit** yer kaplar.
+
+#### Ondalıklı Sayılar: float , double
+
+-> float: Bellekte **32 bit** yer kaplar. **Virgülden sonra 7 haneye kadar** duyarlıdır. Tek duyarlı ondalıklı sayı olarak da bilinir.
+
+-> double: Bellekte **64 bit ** yer kaplar. **Virgülden sonra 17 haneye kadar** duyarlıdır. Çift duyarlı ondalıklı sayı olarak da bilinir.
