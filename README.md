@@ -90,3 +90,36 @@ sayıları
 A = 10  -  B = 11  -  C = 12  -  D = 13  -  E = 14  -  F = 15
 
 e eşittir.
+
+#### Float - Double Tanımlama
+
+0.25 değerinde bir float tanımlamak için:
+
+~~~java
+.25f
+.25F
+0.25f
+0.25F
+~~~
+
+0.25 değerinde bir double tanımlamak için:
+
+~~~java
+.25d
+.25D
+0.25d
+0.25D
+0.25
+.25
+25E-2
+~~~
+
+**Not:** Noktalı bir sayının sonuna f,F,d,D konulmazsa *double** olarak atanır.
+
+**Not:** Noktalı sayıyı yazarken xyE-z şeklinde yazılırsa E 10 üzeri anlamına gelir.(xy)^(z)
+
+**Not:** Karakterler tek tırnak içerisine yazılır. 
+~~~java
+char a = '3';
+~~~
+
