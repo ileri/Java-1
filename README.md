@@ -157,3 +157,22 @@ class_adi referans_adi = new sinif_adi();
 
 Yukarıda **class_adi** tipinde **referans_adi** isimli bir **nesne** oluşturduk.
 
+### final - Sabit Tanımlama
+Java'da final deyimini kullanarak sabit değer tanımlayabiliriz.
+
+final ile tanımlamayı metodun dışında yapıyorsak ilk değer atama zorunludur.
+
+final ile tanımlamayı metod içinde yapıyorsak ilk değersiz tanımlayabiliriz.
+
+Her iki durumda da sadece 1 defa değer alır. Sonraki değer atamalarında hata verir.
+
+~~~java
+class Sabit{
+	static final double pi = 3.14;
+	
+	public static void main(){
+		final double avagadro;
+		avagadro = 6.02E-23;
+	}
+}
+~~~
