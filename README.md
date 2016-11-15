@@ -249,3 +249,19 @@ next(); Boşluğa kadar olan yeri String olarak oku
 hasNext(); Okunacak şey var mı kontrol et
 nextLine(); Satır oku
 ~~~
+
+## İletişim Kutuları
+
+~~~java
+import javax.swing.JOptionPane;
+~~~
+
+satırı kodun başına eklenir.
+
+~~~java
+String bilgi = JOptionPane.showInputDialog(null,"Mesaj","Baslik",icon_numarasi);
+// GUI ile String tipinde Girdi almaya yarar
+
+JOptionPane.showMessageDialog(null,"Mesaj","Baslik",simge_no);
+// GUI ile Mesaj göstermeye yarar
+~~~
