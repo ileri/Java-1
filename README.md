@@ -59,3 +59,9 @@ Java programları çok kısa dahi olsa class içinde yazılmalıdır.
 #### Karakterler
 
  char: Bellekte **16 bit** yer kaplar. Karakterleri tutar.
+
+#### Mantıksal Tipler
+
+ boolean: **true** - **false**
+
+
