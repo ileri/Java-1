@@ -140,3 +140,20 @@ String s3 = s1 + " " + s2;
 System.out.println(s3);
 // Merhaba Java
 ~~~
+
+### Sınıf - Nesne
+
+**Sınıf:** Sınıflar Java'nın temel programlama elemanlarıdır.Her sınıf bir veri tipidir.
+
+**Nesne:** Bir sınıf tanımladığımızda yeni bir veri tipi oluşturmuş oluruz. Bu veri tipinden oluşturulan değişkene de **nesne** denir.
+
+Örneğin **musteri** adında bir **class** tanımlayıp **musteri** tipinde **musteri1** diye bir değişken oluşturursak **musteri1** bir **nesne**dir.
+
+#### Nesne Oluşturma Şablonu
+
+~~~java
+class_adi referans_adi = new sinif_adi();
+~~~
+
+Yukarıda **class_adi** tipinde **referans_adi** isimli bir **nesne** oluşturduk.
+
