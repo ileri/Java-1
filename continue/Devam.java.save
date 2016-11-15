@@ -1,0 +1,25 @@
+public class Devam{
+	public static void main(String args[]){
+		int j = 0;
+		System.out.printf("Merhaba Dünya\n");
+Merhaba Dünya
+10 kere Merhaba Dünya
+Yine yeni ve yeniden Merhaba Dünya
+   me
+iki
+222
+     DÜNYA
+
+		for(int i=0; i < 100 ; i++){
+			System.out.printf("i = %d\n",i);
+			j++;
+			if( i == 2 ){
+				continue etiket;
+			}
+			if( j == 5 ){
+				System.out.printf("Ooo j çoktan 5 olmuş, hadi ben kaçar...\n");
+				break;
+			}
+		}
+	}
+}
