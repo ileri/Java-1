@@ -8,6 +8,8 @@ public class Yazdir{
 		System.out.printf("%2$s\n","deneme","iki","üç","dört");
 		System.out.printf("%2$d\n",111,222,333,444,555);
 		// n. değişkeni yazdırmak için %n$(s|d|f|...)
-		System.out.printf("%2$10.7s\n","merhaba","dünya","naber","nasılsın");
+		System.out.printf("%2$10.7S\n","merhaba","dünya","naber","nasılsın");
+		// %s = Olduğu gibi yaz
+		// %S = Hepsini büyük harfe çevirip yaz
 	}
 }
