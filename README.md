@@ -114,7 +114,7 @@ e eşittir.
 25E-2
 ~~~
 
-**Not:** Noktalı bir sayının sonuna f,F,d,D konulmazsa *double** olarak atanır.
+**Not:** Noktalı bir sayının sonuna f,F,d,D konulmazsa **double** olarak atanır.
 
 **Not:** Noktalı sayıyı yazarken xyE-z şeklinde yazılırsa E 10 üzeri anlamına gelir.(xy)^(z)
 
