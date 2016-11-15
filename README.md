@@ -3,11 +3,11 @@
 
 Java bir programlama dili ve sistem platformudur.
 
-Java kodları derlendiğinde *bytecode* denilen bir ara formata dönüşür.
+Java kodları derlendiğinde **bytecode** denilen bir ara formata dönüşür.
 
-Java'nın platform bağımsız olması bytecode sistemi sayesindedir.
+Java'nın platform bağımsız olması **bytecode** sistemi sayesindedir.
 
-İşletim sisteminin üzerine kurulan Java Virtual Machine bu bytecode ları yorumlar.
+İşletim sisteminin üzerine kurulan **Java Virtual Machine** bu bytecode ları yorumlar.
 
 ### JAVA
 I
