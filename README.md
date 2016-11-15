@@ -65,3 +65,28 @@ Java programları çok kısa dahi olsa class içinde yazılmalıdır.
  boolean: **true** - **false**
 
 
+### Sayı Sistemleri
+
+#### Decimal - Onluk Taban
+0 1 2 3 4 5 6 7 8 9
+
+Her basamak 10 un n. üssüyle çarpılıp toplanır.
+
+#### Octal - Sekizli Taban
+0 1 2 3 4 5 6 7
+
+Her basamak 8 in n. üssüyle çarpılıp toplanır.
+
+#### HexaDecimal - Onaltılı Taban
+
+Tüm sayılar HexaDecimal olduğunu belirtmek için **0x** ile başlar.
+
+**0x** den sonraki sayılarda
+
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+
+sayıları 
+
+A = 10  -  B = 11  -  C = 12  -  D = 13  -  E = 14  -  F = 15
+
+e eşittir.
