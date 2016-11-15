@@ -129,3 +129,14 @@ char a = '3';
 Örn: String , Array , Classlar ...
 
 
+### String
+
+String karakter dizisidir. Referans Veri Tipidir. **Değişmez** bir veri tipidir.
+
+~~~java
+String s1 = "Merhaba";
+String s2 = "Java";
+String s3 = s1 + " " + s2;
+System.out.println(s3);
+// Merhaba Java
+~~~
