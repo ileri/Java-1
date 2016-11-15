@@ -177,7 +177,7 @@ class Sabit{
 }
 ~~~
 
-## Ekrana Basma Çeşitleri
+### Ekrana Basma Çeşitleri
 
 #### System.out.print(...); -> Düz Yazdır
 #### System.out.printf(...); -> Formatlı Yazdır
@@ -208,3 +208,44 @@ iki
      DÜNYA
 ~~~
 
+### Argüman
+
+~~~java
+main(String args[]){
+	args[0] = İlk parametre
+	args[1] = İkinci parametre
+	.
+	.
+	.
+}
+~~~
+
+## Giriş - Çıkış İşlemleri
+
+### Scanner
+
+~~~java
+import java.util.Scanner;
+~~~
+
+satırı dosyanın başına eklenir.
+
+#### Scanner Nesnesi Oluşturma
+
+~~~java
+Scanner okuyucu = new Scanner(System.in);
+degisken = okuyucu.metod_adi
+~~~
+
+Scanner nesnesi için temel metodlar şunlardır:
+
+~~~java
+nextInt(); int e çevirip oku
+nextByte(); byte e çevirip oku
+nextBoolean(); boolean'a çevirip oku
+nextFloat(); float'a çevirip oku
+nextDouble(); double a çevirip oku
+next(); Boşluğa kadar olan yeri String olarak oku
+hasNext(); Okunacak şey var mı kontrol et
+nextLine(); Satır oku
+~~~
