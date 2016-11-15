@@ -11,9 +11,13 @@ Java'nın platform bağımsız olması bytecode sistemi sayesindedir.
 
 ### JAVA
 |
+
 |-> JDK - Java Development Kit
+
 |-> JRE - Java Runtime Environment
+
 |-> JVM - Java Virtual Machine
+
 
 JDK'nın içindeki temel programlar:
 |
