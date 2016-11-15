@@ -116,10 +116,16 @@ e eşittir.
 
 **Not:** Noktalı bir sayının sonuna f,F,d,D konulmazsa **double** olarak atanır.
 
-**Not:** Noktalı sayıyı yazarken **xyE-z** şeklinde yazılırsa E 10 üzeri anlamına gelir.(xy)^(-z)
+**Not:** Noktalı sayıyı yazarken **xyE-z** şeklinde yazılırsa E 10 üzeri anlamına gelir.(xy)^(-z) . 
+İçinde E geçen bir sayı double olarak tanımlanır.
 
 **Not:** Karakterler tek tırnak içerisine yazılır. 
 ~~~java
 char a = '3';
 ~~~
+
+** byte , short , int , long , float , double , char , boolean haricindeki TÜM VERİ TİPLERİ "Referans Veri Tipi" dir. **
+
+Örn: String , Array , Classlar ...
+
 
