@@ -116,7 +116,7 @@ e eşittir.
 
 **Not:** Noktalı bir sayının sonuna f,F,d,D konulmazsa **double** olarak atanır.
 
-**Not:** Noktalı sayıyı yazarken xyE-z şeklinde yazılırsa E 10 üzeri anlamına gelir.(xy)^(z)
+**Not:** Noktalı sayıyı yazarken **xyE-z** şeklinde yazılırsa E 10 üzeri anlamına gelir.(xy)^(-z)
 
 **Not:** Karakterler tek tırnak içerisine yazılır. 
 ~~~java
