@@ -55,3 +55,7 @@ Java programları çok kısa dahi olsa class içinde yazılmalıdır.
  float: Bellekte **32 bit** yer kaplar. **Virgülden sonra 7 haneye kadar** duyarlıdır. Tek duyarlı ondalıklı sayı olarak da bilinir.
 
  double: Bellekte **64 bit**  yer kaplar. **Virgülden sonra 17 haneye kadar** duyarlıdır. Çift duyarlı ondalıklı sayı olarak da bilinir.
+
+#### Karakterler
+
+ char: Bellekte **16 bit** yer kaplar. Karakterleri tutar.
