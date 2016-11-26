@@ -10,6 +10,7 @@ Java'nın platform bağımsız olması **bytecode** sistemi sayesindedir.
 İşletim sisteminin üzerine kurulan **Java Virtual Machine** bu bytecode ları yorumlar.
 
 ### JAVA
+~~~
 I
 
 I-> JDK - Java Development Kit
@@ -17,17 +18,17 @@ I-> JDK - Java Development Kit
 I-> JRE - Java Runtime Environment
 
 I-> JVM - Java Virtual Machine
-
+~~~
 
 
 JDK'nın içindeki temel programlar:
-
+~~~
 I
 
 I-> javac.exe (Java Derleyicisi)
 
 I-> java.exe (Java Yorumlayıcısı)
-
+~~~
 
 ### JDK > JRE > JVM
 
@@ -85,7 +86,7 @@ Tüm sayılar HexaDecimal olduğunu belirtmek için **0x** ile başlar.
 
 0 1 2 3 4 5 6 7 8 9 A B C D E F
 
-sayıları 
+sayıları
 
 A = 10  -  B = 11  -  C = 12  -  D = 13  -  E = 14  -  F = 15
 
@@ -116,10 +117,10 @@ e eşittir.
 
 **Not:** Noktalı bir sayının sonuna f,F,d,D konulmazsa **double** olarak atanır.
 
-**Not:** Noktalı sayıyı yazarken **xyE-z** şeklinde yazılırsa E 10 üzeri anlamına gelir.(xy)^(-z) . 
+**Not:** Noktalı sayıyı yazarken **xyE-z** şeklinde yazılırsa E 10 üzeri anlamına gelir.(xy)^(-z) .
 İçinde E geçen bir sayı double olarak tanımlanır.
 
-**Not:** Karakterler tek tırnak içerisine yazılır. 
+**Not:** Karakterler tek tırnak içerisine yazılır.
 ~~~java
 char a = '3';
 ~~~
@@ -169,7 +170,7 @@ Her iki durumda da sadece 1 defa değer alır. Sonraki değer atamalarında hata
 ~~~java
 class Sabit{
 	static final double pi = 3.14;
-	
+
 	public static void main(){
 		final double avagadro;
 		avagadro = 6.02E-23;
