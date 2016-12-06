@@ -1,6 +1,3 @@
-
-package koleksiyon;
-
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -28,45 +25,45 @@ public class SetSinifi {
 		return -1;
 	}
 	public static void main(String args[]){
-		//Heşset
+		//HeÅŸset
 		HashSet<String> hs = new HashSet<String>();
 		hs.add("Elma");
 		hs.add("Kiraz");
 		hs.add("Armut");
-		hs.add("Üzüm");
-		hs.add("Üzüm"); //Aynı elemanı eklemiyor
-		System.out.println(hs); //Yazarken rastgele yazdırıyor.
-		hs.remove("Üzüm");
+		hs.add("Uzum");
+		hs.add("Uzum"); //AynÄ± elemanÄ± eklemiyor
+		System.out.println(hs); //Yazarken rastgele yazdÄ±rÄ±yor.
+		hs.remove("Uzum");
 		System.out.println(hs);
 		hs.remove("Kiraz");
 		System.out.println(hs);
 		
-		//Tıriiset
+		//TÄ±riiset
 		TreeSet<Integer> ts = new TreeSet<Integer>();
 		ts.add(1);
 		ts.add(3);
 		ts.add(5);
 		ts.add(7);
 		ts.add(9);
-		ts.add(9); // Aynı eleman iki kere eklenmez
-		System.out.println(ts); //Treeset sıralı yazdırılır
+		ts.add(9); // AynÄ± eleman iki kere eklenmez
+		System.out.println(ts); //Treeset sÄ±ralÄ± yazdÄ±rÄ±lÄ±r
 		ts.remove(1);ts.remove(9);
 		System.out.println(ts);
 		
 		//TreeSet Iterator
 		Iterator<Integer> i = ts.iterator();
 		while(i.hasNext()){
-			System.out.println("Sıradaki eleman:" + i.next());
+			System.out.println("SÄ±radaki eleman:" + i.next());
 			i.remove();
-			System.out.println("Seçili eleman silindi.");
+			System.out.println("SeÃ§ili eleman silindi.");
 		}
 		
 		//HashSet Iterator
 		Iterator<String> j = hs.iterator();
 		while(j.hasNext()){
-			System.out.println("HashSet teki sıradaki eleman: " + j.next());
+			System.out.println("HashSet teki sÄ±radaki eleman: " + j.next());
 			j.remove();
-			System.out.println("Seçili eleman silindi");
+			System.out.println("SeÃ§ili eleman silindi");
 		}
 		
 		// Listeler
@@ -76,47 +73,47 @@ public class SetSinifi {
 		linked1.add("Merhaba");
 		linked1.add("Dunya");
 		linked1.add("Naber");
-		linked1.add("Nasılsın");
+		linked1.add("NasÄ±lsÄ±n");
 		linked2.add("Sana");
 		linked2.add("da");
 		linked2.add("Merhaba");
-		linked2.add("İyiyim");
+		linked2.add("Iyiyim");
 		linked2.add("Elhamduillah");
-		linked1.add(0,"Selamun Aleykum"); //Add komutuna indis verirsek verilen indise ekler, sonrakileri kaydırır
+		linked1.add(0,"Selamun Aleykum"); //Add komutuna indis verirsek verilen indise ekler, sonrakileri kaydÄ±rÄ±r
 		System.out.println("linked1:" + linked1);
 		System.out.println("linked2:" + linked2);
 		linked1.addAll(linked2);
 		System.out.println("linked1:" + linked1);
 		linked2.clear();
 		System.out.println("linked2:" + linked2);
-		System.out.println("linked1'in 3. elemanı:" + linked1.get(2));
-		linked1.set(8,"Allah'a şükürler olsun");
+		System.out.println("linked1'in 3. elemanÄ±:" + linked1.get(2));
+		linked1.set(8,"Allah'a ÅŸÃ¼kÃ¼rler olsun");
 		System.out.println("linked1:" + linked1);
 		
-		//LinkedList Yazdır
+		//LinkedList YazdÄ±r
 		Iterator<String> k = linked1.iterator();
 		while(k.hasNext()){
 			System.out.print(k.next() + " ");
 		}
 		System.out.println();
-		System.out.println("linked1 de ilk \"Merhaba\" 'nın indisi:" + ilkIndis(linked1,"Merhaba"));
-		System.out.println("linked1 de son \"Merhaba\" 'nın indisi:" + sonIndis(linked1,"Merhaba"));
+		System.out.println("linked1 de ilk \"Merhaba\" 'nÄ±n indisi:" + ilkIndis(linked1,"Merhaba"));
+		System.out.println("linked1 de son \"Merhaba\" 'nÄ±n indisi:" + sonIndis(linked1,"Merhaba"));
 		
 		//Kuyruk - Queue
 		Queue<String> kuyruk = new LinkedList<String>();
 		kuyruk.offer("Pisa Kulesi");
-		kuyruk.offer("Veliağa Hipodromu");
+		kuyruk.offer("VeliaÄŸa Hipodromu");
 		kuyruk.offer("Eyfel Kulesi");
 		System.out.println("kuyruk:" + kuyruk);
 		System.out.println("kuyruktan silinen eleman:" + kuyruk.poll());
-		System.out.println("poll uygulanmış kuyruk:" + kuyruk);
+		System.out.println("poll uygulanmÄ±ÅŸ kuyruk:" + kuyruk);
 		
-		//Yığıt - Stack
+		//YÄ±ÄŸÄ±t - Stack
 		Stack<String> yigit = new Stack<String>();
 		yigit.push("Paris");
 		yigit.push("Londra");
 		yigit.push("Venedik");
-		yigit.push("Çorum");
+		yigit.push("Ã‡orum");
 		yigit.push("New York");
 		yigit.push("Mardin");
 		System.out.println("yigit:" + yigit);
@@ -126,9 +123,3 @@ public class SetSinifi {
 		System.out.println("yigit:" + yigit);
 	}
 }
- @ebubekirdgn
-  
-         
-Write  Preview
-
-Leave a comment
