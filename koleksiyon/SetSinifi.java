@@ -6,7 +6,7 @@ import java.util.Stack;
 import java.util.TreeSet;
 
 public class SetSinifi {
-	
+
 	public static int ilkIndis(LinkedList<String> liste, String aranan){
 		for(int i = 0; i < liste.size(); i++){
 			if(liste.get(i).equals(aranan)){
@@ -15,7 +15,7 @@ public class SetSinifi {
 		}
 		return -1;
 	}
-	
+
 	public static int sonIndis(LinkedList<String> liste, String aranan){
 		for(int i = liste.size(); i > 0 ; i--){
 			if(liste.get(i-1).equals(aranan)){
@@ -24,6 +24,7 @@ public class SetSinifi {
 		}
 		return -1;
 	}
+
 	public static void main(String args[]){
 		//Heşset
 		HashSet<String> hs = new HashSet<String>();
@@ -37,7 +38,7 @@ public class SetSinifi {
 		System.out.println(hs);
 		hs.remove("Kiraz");
 		System.out.println(hs);
-		
+
 		//Tıriiset
 		TreeSet<Integer> ts = new TreeSet<Integer>();
 		ts.add(1);
@@ -49,7 +50,7 @@ public class SetSinifi {
 		System.out.println(ts); //Treeset sıralı yazdırılır
 		ts.remove(1);ts.remove(9);
 		System.out.println(ts);
-		
+
 		//TreeSet Iterator
 		Iterator<Integer> i = ts.iterator();
 		while(i.hasNext()){
@@ -57,7 +58,7 @@ public class SetSinifi {
 			i.remove();
 			System.out.println("Seçili eleman silindi.");
 		}
-		
+
 		//HashSet Iterator
 		Iterator<String> j = hs.iterator();
 		while(j.hasNext()){
@@ -65,7 +66,7 @@ public class SetSinifi {
 			j.remove();
 			System.out.println("Seçili eleman silindi");
 		}
-		
+
 		// Listeler
 		//LinkedList
 		LinkedList<String> linked1 = new LinkedList<String>();
@@ -78,7 +79,7 @@ public class SetSinifi {
 		linked2.add("da");
 		linked2.add("Merhaba");
 		linked2.add("Iyiyim");
-		linked2.add("Elhamduillah");
+		linked2.add("Elhamdulillah");
 		linked1.add(0,"Selamun Aleykum"); //Add komutuna indis verirsek verilen indise ekler, sonrakileri kaydırır
 		System.out.println("linked1:" + linked1);
 		System.out.println("linked2:" + linked2);
@@ -89,7 +90,7 @@ public class SetSinifi {
 		System.out.println("linked1'in 3. elemanı:" + linked1.get(2));
 		linked1.set(8,"Allah'a şükürler olsun");
 		System.out.println("linked1:" + linked1);
-		
+
 		//LinkedList Yazdır
 		Iterator<String> k = linked1.iterator();
 		while(k.hasNext()){
@@ -98,7 +99,7 @@ public class SetSinifi {
 		System.out.println();
 		System.out.println("linked1 de ilk \"Merhaba\" 'nın indisi:" + ilkIndis(linked1,"Merhaba"));
 		System.out.println("linked1 de son \"Merhaba\" 'nın indisi:" + sonIndis(linked1,"Merhaba"));
-		
+
 		//Kuyruk - Queue
 		Queue<String> kuyruk = new LinkedList<String>();
 		kuyruk.offer("Pisa Kulesi");
@@ -107,7 +108,7 @@ public class SetSinifi {
 		System.out.println("kuyruk:" + kuyruk);
 		System.out.println("kuyruktan silinen eleman:" + kuyruk.poll());
 		System.out.println("poll uygulanmış kuyruk:" + kuyruk);
-		
+
 		//Yığıt - Stack
 		Stack<String> yigit = new Stack<String>();
 		yigit.push("Paris");
