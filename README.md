@@ -370,7 +370,7 @@ package paket;
     }
   }
 ~~~
-kodu ile pket isimli kendi paketimizi oluşturmuş olduk.
+kodu ile paket isimli kendi paketimizi oluşturmuş olduk.
 
 ### Paket Import Etme
 
@@ -379,3 +379,45 @@ import paketAdi.sinifAdi;
 ~~~
 şeklinde bir komutla istediğimiz bir paketteki istediğimiz bir sınıfı import
 edebiliriz.
+
+## Nesne Üyelerine Erişim
+***public*** : Açık, farklı paket ve sınıflardan erişilebilir.
+Farklı bir paketten erişmek için o paket import edilmelidir.
+
+***private*** : Özel, sadece kendi sınıfından erişilebilir.
+
+***protected*** : Aynı paket ve sınıftan erişilebilir. Farklı paketten
+sadece kalıtımla oluşturulanlar erişebilir.
+
+Aynı class'ın içindeki **static** metodlar sadece adıyla çağırılabilir.
+
+Farklı class'ın içindeki metodlar ***sinifAdi.metodAdi()***
+şekline çağrılabilir.
+
+### Static Metodlar
+Static metodlar bulunduğu sınıfın içerisindeki herhangi bir fonksiyon tarafından
+yeni bir nesne oluşturmaya gerek kalmadan çağırılabilir.
+***Static vs Static Olmayan***
+~~~java
+//STATIC FONKSİYON ÖRNEĞİ
+public class Soru{
+  public static void cevap(){
+    ...
+  }
+  public static void main(String args[]){
+    cevap();
+  }
+}
+~~~
+~~~java
+//STATIC OLMAYAN FONKSİYON ÖRNEĞİ
+public class Soru{
+  public void cevap(){
+    ...
+  }
+  public static void main(String args[]){
+    Soru yeniSoru = new Soru();
+    yeniSoru.cevap();
+  }
+}
+~~~
