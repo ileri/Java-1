@@ -433,3 +433,19 @@ sağlar.
 Aynı şekilde bir || karşılaştırmasında ( c && d ) eğer c 'nin değerinin 1 olduğu
 biliniyorsa d ye hiç bakılmaz. çünkü OR işleminde bir elemanın 1 olması sonucun
 1 olmasını sağlar.
+
+## Diziler
+
+Diziler nesnedir.
+
+Diziler içinde belli sayıda eleman bulundurur.
+
+Dizi indisi 0 dan başlar.
+
+Dizi elemanları aynı türden olmalıdır.
+
+n elemanlı dizide n+1 . eleman çağırılırsa bytecode a çevirirken hata vermez.
+Ancak çalışırken hata verir. Yani **RUNTIME ERROR ( Çalışma Zamanı Hatası )**
+verir.
+
+ 
