@@ -261,3 +261,26 @@ String bilgi = JOptionPane.showInputDialog(null,"Mesaj","Baslik",icon_numarasi);
 JOptionPane.showMessageDialog(null,"Mesaj","Baslik",simge_no);
 // GUI ile Mesaj göstermeye yarar
 ~~~
+
+## Değişkenlerin İnce Noktaları
+
+Class içinde tanımlanan bir değişkenin yani **Nesne Değişkenlerinin**
+ ilk değer ataması zorunlu değildir.
+Yani class içinde tanımlanan **nesne değişkeni** ilk değersiz tanımlanabilir.
+
+Ancak yine de bu değişkenlerin aslında bir ilk değerleri vardır.
+~~~
+public class Duck
+  int a; // a = 0
+  fload b; //b = 0.0
+  ...
+~~~
+
+Herhangi bir metodun içinde tanımlanan **Yerel Değişkenler** için ise
+ilk değer ataması zorunludur.
+
+İlk değeri atanmayan bir yerel değişken **Hatalıdır**
+
+Değişkenler bulunduğu bloğun parantezleri arasında geçerlidir.
+
+***Java'da aynı değişken 2 kere TANIMLANAMAZ***
