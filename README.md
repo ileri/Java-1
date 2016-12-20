@@ -354,3 +354,28 @@ silindiğinde finalize() fonksiyonun içindeki komutlar çalıştırılır.
 System.gc
 ~~~
 komutu ile istediğiniz anda Çöp Toplayıcıyı devreye sokabiliriz.
+
+## Paketler
+
+Kendi paketimizi tanımlamak için kodun başına
+~~~java
+package paketismi;
+~~~
+şeklinde bir satır ekleriz.Örneğin:
+~~~java
+package paket;
+  public class deneme{
+    public static void main(String args[]){
+      ...
+    }
+  }
+~~~
+kodu ile pket isimli kendi paketimizi oluşturmuş olduk.
+
+### Paket Import Etme
+
+~~~java
+import paketAdi.sinifAdi;
+~~~
+şeklinde bir komutla istediğimiz bir paketteki istediğimiz bir sınıfı import
+edebiliriz.
