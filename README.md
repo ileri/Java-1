@@ -284,3 +284,13 @@ ilk değer ataması zorunludur.
 Değişkenler bulunduğu bloğun parantezleri arasında geçerlidir.
 
 ***Java'da aynı değişken 2 kere TANIMLANAMAZ***
+
+## Değişkenlerin Depolanması
+
+Değişkenler Bellekte 2 şekilde depolanır.
+
+~~~
+|
+|-> Stack ( Yığın )
+|-> Heap
+~~~
