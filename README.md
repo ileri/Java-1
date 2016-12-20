@@ -294,3 +294,43 @@ Değişkenler Bellekte 2 şekilde depolanır.
 |-> Stack ( Yığın )
 |-> Heap
 ~~~
+
+**Yığın**: RAM'de Stack halinde tutulur. Değişkenler üst üste yığılır.
+İşi biten değişken silinir.
+
+**Heap**: new Anahtarı ile oluşturulan nesneler Heap 'da depolanır. Stack'a
+göre yavaştır.
+
+new Anahtarı ile bir nesne oluşturduğumuzda bu nesne 2 parçadan oluşur.
+
+1 - **Referans** : Stack'te tutulur. İlgili değişkenin heap daki adresini tutar.
+2 - **Heap Nesnesi**: Heap'da tutulur. Asıl bilgiler burada depolanır.
+
+***Referans ile Nesne arasındaki bağlantı koparsa bu ilişki bir daha kurulamaz.
+Heap taki nesne artık bir çöptür. Erişimi mümkün değildir.***
+
+Örneğin aşağıdaki gibi bir kod yazdığımızda:
+
+~~~java
+public class Bellek{
+  public void foo(){
+    bar();
+  }
+  public void bar(){
+    Duck d = new Duck();
+  }
+}
+~~~
+Bellekte aşağıdaki gibi tutulur:
+~~~
+[bar() d]-|---------------|
+[foo()  ] |               |
+          |               v
+          |              /---\
+          |             |  d  |
+          |              \---/
+          |               Duck
+          |
+|________| |____________________|
+  STACK             HEAP
+~~~
