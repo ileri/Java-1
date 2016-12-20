@@ -334,3 +334,23 @@ Bellekte aşağıdaki gibi tutulur:
 |________| |____________________|
   STACK             HEAP
 ~~~
+
+## GARBAGE COLLECTOR (Çöp Toplayıcı)
+Referansı olmayan nesneler bellekte gereksiz yer kaplamaktadır.
+
+Java bu nesnelerin belleği gereksiz işgalini önlemek için Çöp Toplayıcı
+ sistemine sahiptir.
+
+Çöp Toplayıcı belli aralıklarda devreye girerek heap'taki referansı olmayan
+nesneleri bellekten siler.
+
+Bir nesne silinmeden hemen önce o nesnenin ***finalize()*** fonskiyonu
+çağırılır.
+
+Bir nesnenin finalize() fonksiyonunu değiştirirsek, ilgili türden bir nesne
+silindiğinde finalize() fonksiyonun içindeki komutlar çalıştırılır.
+
+~~~java
+System.gc
+~~~
+komutu ile istediğiniz anda Çöp Toplayıcıyı devreye sokabiliriz.
