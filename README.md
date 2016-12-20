@@ -421,3 +421,14 @@ public class Soru{
   }
 }
 ~~~
+***Püfffffff Nokta***
+Bir karar verme cümlesinde (if, while, ... ) bakılan mantıksal karşılaştırma
+işlemlerinde Java en kısa yolu tercih eder.
+
+Örneğin bir && karşılaştırmasında ( a && b ) eğer a 'nın 0 olduğu biliniyorsa
+b ye hiç bakılmaz , çünkü AND işleminde bir elemanın 0 olması sonucun 0 olmasını
+sağlar.
+
+Aynı şekilde bir || karşılaştırmasında ( c && d ) eğer c 'nin değerinin 1 olduğu
+biliniyorsa d ye hiç bakılmaz. çünkü OR işleminde bir elemanın 1 olması sonucun
+1 olmasını sağlar.
