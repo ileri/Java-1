@@ -448,4 +448,72 @@ n elemanlı dizide n+1 . eleman çağırılırsa bytecode a çevirirken hata ver
 Ancak çalışırken hata verir. Yani **RUNTIME ERROR ( Çalışma Zamanı Hatası )**
 verir.
 
- 
+### Dizi Türündeki Referanslar
+~~~java
+double[] dd; // double tipi dizi referansı tanımlama
+double dd[]; // double tipi dizi referansı tanımlama
+~~~
+Yukarıdaki kodda **sadece referanslar tanımlandı**,
+henüz **Nesneler oluşturulmadı!**
+
+### Dizi Nesnesi Oluşturma
+~~~java
+double[] dd = new double[20];
+double dd[] = new double[20];
+Object kutu[] = new Object[20];
+~~~
+
+### Temel Tiplerden Oluşan Diziler
+~~~java
+double dizi[] = {1.1,2.2,3.3,4.4}; //Doğru bir kullanım
+~~~
+
+~~~java
+double dizi[];
+dizi = {1.1,2.2,3.3,4.4}; // HATALI!
+~~~
+
+~~~java
+double dizi[];
+dizi = new double[]{1.1,2.2,3.3,4.4}; //Doğru bir kullanım
+~~~
+
+~~~java
+double dizi[] = new double[3];
+dizi[0] = 1.1;
+dizi[1] = 2.2;
+dizi[2] = 3.3;
+~~~
+
+### Nesnelerden Oluşan Diziler
+~~~java
+Object[] kisi = new Object[4];
+dizi[0] = 1;
+dizi[1] = "Mehmet"
+dizi[2] = 8.2;
+dizi[3] = dizi[0] + 2; // Bu satır (Object + int) olduğu için hata verir
+~~~
+
+### Dizilerde Nesne - Referans İlişkisi
+~~~java
+int liste[] = new int[5];
+liste[0] = 1; liste[1] = 3; liste[2] = 8;
+//Liste şu anda: [1,3,8]
+liste = new int[15];
+//Liste şu anda: []
+~~~
+Yukarıdaki örnekte yeni bir nesne tanımladık ve artık liste referansı yeni
+oluşturulan nesneye işaret ediyor. Eski listenin içindekileri kaybettik.
+Eski nesne artık bir ÇÖP!
+
+### Çok Boyutlu Dizi
+Dizi içindeki dizilerden oluşur.Birçok dizi iç içe olabilir.
+~~~java
+int[][] dizi = {{1,2,3},{2,3,4}}; //DOĞRU
+int[][] dizi = new int[3][4]; //DOĞRU
+int[][] dizi = new int[3][]; //DOĞRU
+int[][] dizi = new int[][3]; //YANLIŞ!
+int[][][][][][][][][][] dizi = int[a][b][c][d][e][f][g][h][i][j];
+//Yukarıda a,b,c,d,e,f,g,h,i belirtilmesi zorunludur. j ise opsiyoneldir.
+//Yani sadece en içteki dizinin boyutu belirsiz olabilir.
+~~~
