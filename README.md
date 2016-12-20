@@ -422,6 +422,7 @@ public class Soru{
 }
 ~~~
 ***Püfffffff Nokta***
+
 Bir karar verme cümlesinde (if, while, ... ) bakılan mantıksal karşılaştırma
 işlemlerinde Java en kısa yolu tercih eder.
 
