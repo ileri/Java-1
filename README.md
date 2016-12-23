@@ -434,6 +434,18 @@ Aynı şekilde bir || karşılaştırmasında ( c && d ) eğer c 'nin değerinin
 biliniyorsa d ye hiç bakılmaz. çünkü OR işleminde bir elemanın 1 olması sonucun
 1 olmasını sağlar.
 
+## Object
+
+Java'da temel veri tiiplerinin tutulduğu ana class ın adı Object tir.
+
+Object class ı tüm veri tiplerini içinde barındırır.
+
+Object tipindeki bir nesne oluşturulduğunda tüm veri tiplerinden bilgi
+barındırabilir.
+
+Object arraylarının farklı elemanları farklı veri tipleri olabilir.
+
+
 ## Diziler
 
 Diziler nesnedir.
@@ -493,6 +505,8 @@ dizi[1] = "Mehmet"
 dizi[2] = 8.2;
 dizi[3] = dizi[0] + 2; // Bu satır (Object + int) olduğu için hata verir
 ~~~
+
+***Object arraylarının farklı elemanları farklı veri tipleri olabilir.***
 
 ### Dizilerde Nesne - Referans İlişkisi
 ~~~java
