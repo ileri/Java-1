@@ -545,6 +545,8 @@ int[][][][][][][][][][] dizi = int[a][b][c][d][e][f][g][h][i][j];
 ## Koleksiyonlar
 Koleksiyonlar içinde birçok öğeyi barındıran bir nesnedir.
 
+Koleksiyonları kullanabilmek için ilgili kütüphaneyi import etmeliyiz.
+
 ### Koleksiyonların Avantajları
 Verileri bir araya toplamamızı ve veriler üzerinde işlem yapmamızı kolaylaştırır.
 
@@ -553,3 +555,68 @@ Yazılımcı koleksiyon sınıfı içerisinde yer alan algoritmaları kullanrak 
 Yazılımcıya uygulamanın performansını artıran kullanışlı algoritma ve veri yapıları sağlar.
 
 Belli bir boyutları yoktur. İçerisine veri ekleyip çıkardıkça boyutları değişir. Yani yazılımcının önceden koleksiyonu boyutlandırmasına gerek yoktur.
+
+### Koleksiyon Türleri
+Koleksiyonları **Set** ve **List** olarak ikiy türe ayırabiliriz.
+
+#### List
+**List** nesnelerden oluşan topluluktur.
+
+List içerisinde aynı değerde birden fazla eleman bulunbilir.
+Yani **dublikasyona** izin verilir.
+
+List teki elemanların belli bir sıralaması vardır.
+
+#### Set
+
+Setlerde sıra yoktur.
+
+**Duplikasyona** izin **VERİLMEZ!**
+
+Kümede bir öğenin yeri belirsizdir.
+
+Kümenin öğeleri sıralı olmadığı için, yeni gelen bir öğeyi kümede belirli bir konuma yerleştiremeyiz.
+
+Aynı nedenle, bir öğe yerine başka bir öğe koyamayız (replacement olamaz). Ama, istenen öğe kümeden silinebilir ve istenen öğe kümeye eklenebilir.
+
+Kümedeki öğelere erişmek (retrieving) mümkündür, ama erişim sırası belirsizdir.
+
+##### HashSet
+~~~java
+HashSet <String> diziAdi = new HashSet <String>();
+~~~
+##### TreeSet
+~~~java
+TreeSet <String> diziAdi= new TreeSet <String>();
+~~~
+
+~~~java
+import java.util.*;
+public class HashSet01 {
+  public static void main(String[] args) {
+    HashSet <String> hs = new HashSet <String>();
+    hs.add("Bursa");
+    hs.add("Ankara");
+    hs.add("Malatya");
+    hs.add("Diyarbakır");
+    hs.add("Muğla");
+    hs.add("Ankara"); // Hashset çift veriye izin vermez
+    System.out.println("illerin Sırasız hali");
+    System.out.println(hs);
+    System.out.println("illerin Sıralı hali");
+    TreeSet <String> siraliKume= new TreeSet <String> (hs);
+    System.out.println(siraliKume);
+  }
+}
+~~~
+
+Yukarıdaki örnek kodun çıktısı şu şekilde olacaktır:
+
+~~~
+illerin Sırasız hali
+[Bursa,Malatya,Ankara,Muğla,Diyarbakır]
+illerin Sıralı Hali
+[Ankara,Bursa,Diyarbakır,Malatya,Muğla]
+~~~
+
+Burada dikkat edilmesi gereken nokta Set kolleksiyon tipinin dublikasyona izin vermediği için aynı eleman add komutuyla iki kere eklenmeye çalışıldığı halde setlerde sadece bir tane bulunuyor.
