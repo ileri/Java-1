@@ -713,3 +713,17 @@ illerin Sıralı Hali
 ~~~
 
 Burada dikkat edilmesi gereken nokta Set kolleksiyon tipinin dublikasyona izin vermediği için aynı eleman add komutuyla iki kere eklenmeye çalışıldığı halde setlerde sadece bir tane bulunuyor.
+
+#### Iterator
+
+IIterator, elemanlar arası istenilen yönde ilerlemek için kullanılır. Üç temel yöntemi vardır:
+
+next() - Bir sonraki elemanı çağırır.
+
+hasNext() - Bir sonraki eleman var mı kontrol eder, bool olarak sonuç döner
+
+remove() - Döndürülen son elemanı siler.
+
+~~~java
+Iterator degisken = list_değişkeni.iterator();
+~~~
