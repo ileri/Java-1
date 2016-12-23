@@ -460,6 +460,8 @@ n elemanlı dizide n+1 . eleman çağırılırsa bytecode a çevirirken hata ver
 Ancak çalışırken hata verir. Yani **RUNTIME ERROR ( Çalışma Zamanı Hatası )**
 verir.
 
+Dizinin eleman sayısını bulmak için diziAdi.length fonksiyonu kullanılır.
+
 ### Dizi Türündeki Referanslar
 ~~~java
 double[] dd; // double tipi dizi referansı tanımlama
@@ -498,6 +500,14 @@ dizi[2] = 3.3;
 ~~~
 
 ### Nesnelerden Oluşan Diziler
+Diziler sadece temel veri tipinden bilgiler tutabilir veya dizilerin
+elemanları aynı tipten oluşmalıdır gibi bir zorunluluk yoktur.
+
+Bir nesne arrayı o nesne türünden değerler tutabilir.
+
+Object nesnesi de tüm nesneleri içerdiği için object arrayları tüm veri
+tipinden elemanlar içerebilir.
+
 ~~~java
 Object[] kisi = new Object[4];
 dizi[0] = 1;
@@ -531,3 +541,15 @@ int[][][][][][][][][][] dizi = int[a][b][c][d][e][f][g][h][i][j];
 //Yukarıda a,b,c,d,e,f,g,h,i belirtilmesi zorunludur. j ise opsiyoneldir.
 //Yani sadece en içteki dizinin boyutu belirsiz olabilir.
 ~~~
+
+## Koleksiyonlar
+Koleksiyonlar içinde birçok öğeyi barındıran bir nesnedir.
+
+### Koleksiyonların Avantajları
+Verileri bir araya toplamamızı ve veriler üzerinde işlem yapmamızı kolaylaştırır.
+
+Yazılımcı koleksiyon sınıfı içerisinde yer alan algoritmaları kullanrak yeni algoritma yazmak zorunda kalmaz.
+
+Yazılımcıya uygulamanın performansını artıran kullanışlı algoritma ve veri yapıları sağlar.
+
+Belli bir boyutları yoktur. İçerisine veri ekleyip çıkardıkça boyutları değişir. Yani yazılımcının önceden koleksiyonu boyutlandırmasına gerek yoktur.
