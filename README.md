@@ -567,6 +567,61 @@ Yani **dublikasyona** izin verilir.
 
 List teki elemanların belli bir sıralaması vardır.
 
+Stack, Arraylist, Vector, LinkedList türleri de List sınıfından türetilmiştir.
+
+##### List Fonksiyonları
+
+add - Listeye eleman ekle
+
+addAll(Collection c) - Belirtilen lkoleksiyonun tüm elemanlarını listeye ekle
+
+clear - Listeyi temizle
+
+get(i) - İndisi belirtilen öğeyi getir
+
+set(i,b) - b elemanını i indisli yere yerleştir.(O indiste eleman varsa o silinerek yerine bu eklenir.Kaydırma yapılmaz!)
+
+indexOf() - Aranan elemanın indisi. Yoksa -1 döndürür
+
+lasIndexOf() - Aranan elemanın en son bulunduğu indir. Yoksa -1 döndürür
+
+remove(i) Belirtilen indisteki elemanı listeden kaldırır.
+
+size() - Listenin eleman sayısını verir.
+
+toArray() - Listeyi diziye dönüştürür.
+
+##### LinkedList
+~~~java
+LinkedList <Tip> degisken_adi = new LinkedList <Tip>();
+~~~
+
+Linked List Örneği:
+~~~java
+import java.util.*;
+public class BagliListe {
+  public static void main(String[] args) {
+    LinkedList<String> liste = new LinkedList <String>();
+    liste.add("Portakal");
+    liste.add("Limon");
+    liste.add("Mandalina");
+    liste.add("Armut");
+    liste.add("Mandalina");
+    liste.add("Elma");
+    System.out.println("İlk liste = " + liste);
+    liste.add(4, "Ayva");
+    System.out.println("Değişen liste = " + liste);
+    System.out.println("ilk öğe = " + liste.getFirst());
+    System.out.println("6.nci öğe = " + liste.get(6));
+    System.out.println("silinen = " + liste.removeFirst());
+    System.out.println("silinen = " + liste.removeLast());
+    System.out.println("Liste son hali = " + liste);
+  }
+}
+~~~
+
+
+
 #### Set
 
 Setlerde sıra yoktur.
