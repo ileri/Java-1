@@ -620,7 +620,45 @@ public class BagliListe {
 }
 ~~~
 
+##### Queue ( Kuyruk )
 
+Kuyrukta **FIFO** mantığı vardır. Yani ilk eklenen eleman listeden ilk çıkarılacak olan elemandır. Gerçek hayattaki kuyruk sisteminden adını almıştır.
+~~~java
+Queue <String> kyrk = new LinkedList <String>();
+~~~
+
+***Kuyruk İşlemleri:***
+
+element() - En baştaki elemanı verir
+
+offer() - Kuyruğa yeni eleman ekler
+
+peek() - Kuyruğun başındaki elemanı döndürür. Kuyruk boşsa **null** döndürür
+
+poll() -Kuyruğun başındaki elemanı döndürür ve **siler**. Kuyruk boşsa **null** döndürür
+
+remove() - Kuyruğun önündeki nesneyi siler ve döndürür
+
+size() - Kuyruktaki eleman sayısı
+
+clear() - Kuyruğu temizle
+
+~~~java
+//Kuyrukta bekleyen 4 kişiyi FIFO mantığı ile kuyruktan çıkaran program
+import java.util.*;
+class Kuyruk {
+  public static void main(String[] args) {
+    Queue <String> kyrk = new LinkedList<String>();
+    kyrk.offer("Bade");
+    kyrk.offer("Zehra");
+    kyrk.offer("Fatih");
+    kyrk.offer("Hakan");
+    System.out.println("Kuyruktan çıkartılıyor");
+    while (!kyrk.isEmpty())
+    System.out.print(kyrk.remove() + " ");
+  }
+}
+~~~
 
 #### Set
 
