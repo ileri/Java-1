@@ -761,3 +761,19 @@ public class Dizi{
   }
 }
 ~~~
+
+## Özyineleme ( Recursive )
+
+Bir fonksiyonun kendisini çağırmasına özyineleme denir.
+
+~~~java
+static int faktoriyel(int sayi){
+  if(sayi == 1){
+    return 1;
+  }else{
+    return(sayi*faktoriyel(sayi-1));
+  }
+}
+~~~
+
+Yukarıda faktöriyel hesaplama işlemini recursive olarak yapan bir fonksiyon yazılmıştır.
