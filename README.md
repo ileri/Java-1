@@ -787,3 +787,64 @@ Yapılandırıcı bir nesne oluşturulurken ilk çağırılan fonksiyona verilen
 **Yapılandırıcılar viod dir.**
 
 Yapılandırıcılar aşırı yüklenebilirler. ( Overload (*açıklaması sonraki bölümde mevcut*))
+
+Her sınıf için parametresiz default bir yapılandırıcı vardır.
+
+Eğer koda eklemesek bile derleyici otomatik olarak bir yapılandırıcı metod çağırır.
+
+~~~java
+public class Yapilandirici{
+  int deger1;
+  public Yapilandirici(){
+    deger1 = 5;
+  }
+  public void main(String args[]){
+    Yapilandirici nesne1 = new Yapilandirici();
+    System.out.println(nesne1.deger1);
+  }
+}
+~~~
+
+Aşağıda da Overload bir Yapılandırıcı örneği mevcuttur:
+
+~~~java
+class Araba{
+  int kapi;
+  int vites;
+  public Araba(int kapiSayi){
+    kapi = kapiSayi;
+  }
+  public Araba(int kapiSayi, int vitesSayi){
+    kapi = kapiSayi;
+    vites = vitesSayi;
+  }
+}
+public class Yapilandirici{
+  public static void main(String args[]){
+    Araba ar1 = new Araba();
+    Araba ar2 = new Araba(4);
+    Araba ar3 = new Araba(4,5);
+  }
+}
+~~~
+
+## Aşırı Yükleme ( Overload )
+
+Aşırı Yükleme bir class'ın aynı isimli birden çok metod içermesidir.
+
+Yani aynı isme sahip birden çok metod olma durumudur.
+
+Aşırı yükleme yapılan fonksiyonlar için ayırt edii özellik argümandır.
+
+Argüman sayısı yada tipine göre Java gerekli fonksiyonu çalıştırılır.
+
+Örneğin aynı ada sahip iki fonkiyondan birisi String diğeri int tipinde
+değişken alıyorsa, biz bu fonksiyonu çağırırken arguman olarak String
+tipinden bir veri verirsek String argumanlı fonksiyon çalışır.
+int tipinden veri verirsek int argumanlı fonksiyon çalışır.
+
+Aynı şekilde arguman sayısına göre de overload yapılır.
+
+Örneğin aynı ada sahip iki fonksiyondan biri hiç arguman almıyor, biri bir arguman alıyor, biri de iki arguman alıyorsa
+biz bu fonksiyonu çağırırken arguman yollamazsak arguman almayan fonksiyon çalışır, 1 arguman yollarsak 1 arguman alan fonksiyon çalışır,
+benzer şekilde 2 arguman yollarsak 2 arguman alan fonksiyon çalışır.
