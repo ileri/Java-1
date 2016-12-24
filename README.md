@@ -559,7 +559,7 @@ Belli bir boyutları yoktur. İçerisine veri ekleyip çıkardıkça boyutları 
 ### Koleksiyon Türleri
 Koleksiyonları **Set** ve **List** olarak ikiy türe ayırabiliriz.
 
-#### List
+### List
 **List** nesnelerden oluşan topluluktur.
 
 List içerisinde aynı değerde birden fazla eleman bulunbilir.
@@ -569,7 +569,7 @@ List teki elemanların belli bir sıralaması vardır.
 
 Stack, Arraylist, Vector, LinkedList türleri de List sınıfından türetilmiştir.
 
-##### List Fonksiyonları
+#### List Fonksiyonları
 
 add - Listeye eleman ekle
 
@@ -591,7 +591,7 @@ size() - Listenin eleman sayısını verir.
 
 toArray() - Listeyi diziye dönüştürür.
 
-##### LinkedList
+#### LinkedList
 ~~~java
 LinkedList <Tip> degisken_adi = new LinkedList <Tip>();
 ~~~
@@ -620,7 +620,7 @@ public class BagliListe {
 }
 ~~~
 
-##### Queue ( Kuyruk )
+#### Queue ( Kuyruk )
 
 Kuyrukta **FIFO** mantığı vardır. Yani ilk eklenen eleman listeden ilk çıkarılacak olan elemandır. Gerçek hayattaki kuyruk sisteminden adını almıştır.
 ~~~java
@@ -660,7 +660,7 @@ class Kuyruk {
 }
 ~~~
 
-#### Set
+### Set
 
 Setlerde sıra yoktur.
 
@@ -674,11 +674,11 @@ Aynı nedenle, bir öğe yerine başka bir öğe koyamayız (replacement olamaz)
 
 Kümedeki öğelere erişmek (retrieving) mümkündür, ama erişim sırası belirsizdir.
 
-##### HashSet
+#### HashSet
 ~~~java
 HashSet <String> diziAdi = new HashSet <String>();
 ~~~
-##### TreeSet
+#### TreeSet
 ~~~java
 TreeSet <String> diziAdi= new TreeSet <String>();
 ~~~
@@ -714,7 +714,7 @@ illerin Sıralı Hali
 
 Burada dikkat edilmesi gereken nokta Set kolleksiyon tipinin dublikasyona izin vermediği için aynı eleman add komutuyla iki kere eklenmeye çalışıldığı halde setlerde sadece bir tane bulunuyor.
 
-#### Iterator
+### Iterator
 
 IIterator, elemanlar arası istenilen yönde ilerlemek için kullanılır. Üç temel yöntemi vardır:
 
@@ -727,3 +727,17 @@ remove() - Döndürülen son elemanı siler.
 ~~~java
 Iterator degisken = list_değişkeni.iterator();
 ~~~
+
+## Özel For Döngüsü
+Dizi elemanları üzerinde dolaşmak için bir indis değişkeni kullanmak zorunda değiliz.
+
+Javada bu iş için özel bir for döngüsü türü bulunmaktadır.
+
+~~~java
+int dizi[] = {1,2,3,4,5};
+for(int i:dizi){
+  System.out.println(i);
+}
+~~~
+
+Yukarıdaki kodda i dizinin o anki elemanının değeridir, indisi değil.
