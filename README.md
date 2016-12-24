@@ -741,3 +741,23 @@ for(int i:dizi){
 ~~~
 
 Yukarıdaki kodda i dizinin o anki elemanının değeridir, indisi değil.
+
+## Parametre Olarak Dizi Göndermek
+
+Oluşturduğumuz bir fonksiyona bir diziyi argüman olarak verebiliriz.
+
+~~~java
+public class Dizi{
+  public static void main(String args[]){
+    String dizi[] = new String[3];
+    dizi[0] = "Merhaba";
+    dizi[1] = "Dünya";
+    yazdir(dizi);
+  }
+  static void yazdir(String dizi[]){
+    for(String i:dizi){
+      System.out.println(i);
+    }
+  }
+}
+~~~
