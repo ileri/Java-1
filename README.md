@@ -777,3 +777,13 @@ static int faktoriyel(int sayi){
 ~~~
 
 Yukarıda faktöriyel hesaplama işlemini recursive olarak yapan bir fonksiyon yazılmıştır.
+
+## Yapılandırıcılar ( Constructors )
+
+Yapılandırıcı bir nesne oluşturulurken ilk çağırılan fonksiyona verilen isimdir.
+
+***Yapılandırıcı adı sınıf adıyla aynı olmak ZORUNDA!***
+
+**Yapılandırıcılar viod dir.**
+
+Yapılandırıcılar aşırı yüklenebilirler. ( Overload (*açıklaması sonraki bölümde mevcut*))
