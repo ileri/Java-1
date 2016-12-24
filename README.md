@@ -908,11 +908,3 @@ public class Ogrenci{
   }
 }
 ~~~
-
-~~~java
-
-public Ogrenci(int no, String isim){
-  this.no = no;
-  this.isim = isim;
-}
-~~~
