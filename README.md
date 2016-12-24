@@ -848,3 +848,71 @@ Aynı şekilde arguman sayısına göre de overload yapılır.
 Örneğin aynı ada sahip iki fonksiyondan biri hiç arguman almıyor, biri bir arguman alıyor, biri de iki arguman alıyorsa
 biz bu fonksiyonu çağırırken arguman yollamazsak arguman almayan fonksiyon çalışır, 1 arguman yollarsak 1 arguman alan fonksiyon çalışır,
 benzer şekilde 2 arguman yollarsak 2 arguman alan fonksiyon çalışır.
+
+~~~java
+public class Ornek{
+  public int toplam(){
+    return 0;
+  }
+  public int toplam(int sayi1){
+    return sayi1;
+  }
+  public int toplam(int sayi1, int sayi2){
+    return(sayi1 + sayi2);
+  }
+  public int toplam(int sayi1, int sayi2, int sayi3){
+    return(sayi1 + sayi2 + sayi3);
+  }
+  public double toplam(double sayi1){
+    return sayi1;
+  }
+  public double toplam(double sayi1, double sayi2){
+    return(sayi1 + sayi2);
+  }
+  public double toplam(double sayi1, double sayi2, double sayi3){
+    return(sayi1 + sayi2 + sayi3);
+  }
+}
+~~~
+
+## this Referansı
+
+this referansı nesnenin kendisini refere etmesini sağlar. Özel bir referanstır.
+
+İsim çakışması olması durumunda yerel değişkenin deil, nesne değişkeninin kullanılacağını belirtir.
+
+Yapılandırıcı metosları çağırmak için kullanılır.
+
+Yapılandırıcılar içinde this ile başka yapılandırıcı ÇAĞIRILAMAZ!
+
+Yapılandırıcı içinde diğer bir yapılandırıcı çağırılırken İLK SATIRDA YAZILIR!
+
+this referansı **static metodlarda KULLANILAMAZ!**
+
+~~~java
+public class Ogrenci{
+  public int no;
+  public String isim;
+  public Ogrenci(int no){
+    this(no,"Serhat"); //Yapılandırıcı fonksiyon çağırılıyor.
+  }
+  public Ogrenci(int no, String isim){
+    this.no = no; //this.no dışarıdaki , yani Ogrenci nesnesinin değişkeni olan değişkeni ifade eder. no ise arguman olarak alınan yerel değişkeni.
+    this.isim = isim; //this.isim dışarıdaki , yani Ogrenci nesnesinin değişkeni olan değişkeni ifade eder. isim ise arguman olarak alınan yerel değişkeni.
+  }
+  public static void main(String args[]){
+    Ogrenci ogr1 = new Ogrenci(1,"Serhat");
+    System.out.println(ogr1.no + " numaralı öğrenci: " + ogr1.isim );
+    Ogrenci ogr2 = new Ogrenci(2);
+    System.out.println(ogr2.no + " numaralı öğrenci: " + ogr2.isim );
+  }
+}
+~~~
+
+~~~java
+
+public Ogrenci(int no, String isim){
+  this.no = no;
+  this.isim = isim;
+}
+~~~
