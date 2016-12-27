@@ -897,8 +897,10 @@ public class Ogrenci{
     this(no,"Serhat"); //Yapılandırıcı fonksiyon çağırılıyor.
   }
   public Ogrenci(int no, String isim){
-    this.no = no; //this.no dışarıdaki , yani Ogrenci nesnesinin değişkeni olan değişkeni ifade eder. no ise arguman olarak alınan yerel değişkeni.
-    this.isim = isim; //this.isim dışarıdaki , yani Ogrenci nesnesinin değişkeni olan değişkeni ifade eder. isim ise arguman olarak alınan yerel değişkeni.
+    this.no = no; //this.no dışarıdaki , yani Ogrenci nesnesinin değişkeni olan değişkeni ifade eder. 
+    // no ise arguman olarak alınan yerel değişkeni.
+    this.isim = isim; //this.isim dışarıdaki , yani Ogrenci nesnesinin değişkeni olan değişkeni ifade eder. 
+    // isim ise arguman olarak alınan yerel değişkeni.
   }
   public static void main(String args[]){
     Ogrenci ogr1 = new Ogrenci(1,"Serhat");
