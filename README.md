@@ -582,7 +582,7 @@ set(i,b) - b elemanını i indisli yere yerleştir.(O indiste eleman varsa o sil
 
 indexOf() - Aranan elemanın indisi. Yoksa -1 döndürür
 
-lasIndexOf() - Aranan elemanın en son bulunduğu indir. Yoksa -1 döndürür
+lastIndexOf() - Aranan elemanın en son bulunduğu indir. Yoksa -1 döndürür
 
 remove(i) Belirtilen indisteki elemanı listeden kaldırır.
 
