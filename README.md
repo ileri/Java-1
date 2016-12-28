@@ -271,7 +271,7 @@ Ancak yine de bu değişkenlerin aslında bir ilk değerleri vardır.
 ~~~
 public class Duck
   int a; // a = 0
-  fload b; //b = 0.0
+  float b; //b = 0.0
   ...
 ~~~
 
@@ -429,7 +429,7 @@ işlemlerinde Java en kısa yolu tercih eder.
 b ye hiç bakılmaz , çünkü AND işleminde bir elemanın 0 olması sonucun 0 olmasını
 sağlar.
 
-Aynı şekilde bir || karşılaştırmasında ( c && d ) eğer c 'nin değerinin 1 olduğu
+Aynı şekilde bir || karşılaştırmasında ( c || d ) eğer c 'nin değerinin 1 olduğu
 biliniyorsa d ye hiç bakılmaz. çünkü OR işleminde bir elemanın 1 olması sonucun
 1 olmasını sağlar.
 
@@ -572,7 +572,7 @@ Stack, Arraylist, Vector, LinkedList türleri de List sınıfından türetilmiş
 
 add - Listeye eleman ekle
 
-addAll(Collection c) - Belirtilen lkoleksiyonun tüm elemanlarını listeye ekle
+addAll(Collection c) - Belirtilen koleksiyonun tüm elemanlarını listeye ekle
 
 clear - Listeyi temizle
 
@@ -783,7 +783,7 @@ Yapılandırıcı bir nesne oluşturulurken ilk çağırılan fonksiyona verilen
 
 ***Yapılandırıcı adı sınıf adıyla aynı olmak ZORUNDA!***
 
-**Yapılandırıcılar viod dir.**
+**Yapılandırıcılar void dir.**
 
 Yapılandırıcılar aşırı yüklenebilirler. ( Overload (*açıklaması sonraki bölümde mevcut*))
 
@@ -833,7 +833,7 @@ Aşırı Yükleme bir class'ın aynı isimli birden çok metod içermesidir.
 
 Yani aynı isme sahip birden çok metod olma durumudur.
 
-Aşırı yükleme yapılan fonksiyonlar için ayırt edii özellik argümandır.
+Aşırı yükleme yapılan fonksiyonlar için ayırt edici özellik argümandır.
 
 Argüman sayısı yada tipine göre Java gerekli fonksiyonu çalıştırılır.
 
@@ -878,9 +878,9 @@ public class Ornek{
 
 this referansı nesnenin kendisini refere etmesini sağlar. Özel bir referanstır.
 
-İsim çakışması olması durumunda yerel değişkenin deil, nesne değişkeninin kullanılacağını belirtir.
+İsim çakışması olması durumunda yerel değişkenin değil, nesne değişkeninin kullanılacağını belirtir.
 
-Yapılandırıcı metosları çağırmak için kullanılır.
+Yapılandırıcı metodları çağırmak için kullanılır.
 
 Yapılandırıcılar içinde this ile başka yapılandırıcı ÇAĞIRILAMAZ!
 
