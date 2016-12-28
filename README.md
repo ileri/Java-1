@@ -142,12 +142,13 @@ System.out.println(s3);
 
 **Nesne:** Bir sınıf tanımladığımızda yeni bir veri tipi oluşturmuş oluruz. Bu veri tipinden oluşturulan değişkene de **nesne** denir.
 
-Örneğin **musteri** adında bir **class** tanımlayıp **musteri** tipinde **musteri1** diye bir değişken oluşturursak **musteri1** bir **nesne**dir.
+Örneğin **musteri** adında bir **class** tanımlayıp **musteri** tipinde **musteri1** diye bir değişken oluşturursak 
+yeni oluşturduğumuz **musteri1** bir **nesne**dir.
 
 #### Nesne Oluşturma Şablonu
 
 ~~~java
-class_adi referans_adi = new sinif_adi();
+class_adi referans_adi = new class_adi();
 ~~~
 
 Yukarıda **class_adi** tipinde **referans_adi** isimli bir **nesne** oluşturduk.
