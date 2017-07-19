@@ -1,8 +1,8 @@
 # Java-1
 
 [![OMÜ CEng](https://img.shields.io/badge/OM%C3%9C-CEng-blue.svg)](http://ce.omu.edu.tr/)
-[![Konular](https://img.shields.io/badge/konular-%25100-orange.svg)](https://github.com/celilileri/Java-1)
-[![Language](https://img.shields.io/badge/lang-Java-red.svg)](https://github.com/celilileri/Java-1)
+[![Konular](https://img.shields.io/badge/konular-%25100-orange.svg)](https://github.com/ileri/Java-1)
+[![Language](https://img.shields.io/badge/lang-Java-red.svg)](https://github.com/ileri/Java-1)
 
 Java bir programlama dili ve sistem platformudur.
 
